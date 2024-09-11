@@ -1,0 +1,76 @@
+body {
+    background-color: #0f171e!important;
+}
+header {
+    position: absolute;
+}
+.nav-link {
+    color: white;
+    padding-left: 40px!important;
+    padding-right: 40px!important;
+}
+
+.offcanvas {
+    background-color: #0A061E;
+    color: white;
+}
+
+.canvasStyle {
+    width: 280px !important;
+    padding: 5px;
+    border-top-left-radius: 40px;
+}
+
+.offcanvas-start {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 40px;
+}
+.offcanvas-body ul li {
+    padding-top: 10px;
+}
+.hamburger {
+    height: 35px;
+    width: 35px;
+}
+
+.logo {
+    width: 100px;
+}
+
+.user-icon {
+    height: 35px;
+    width: 35px;
+}
+
+@media screen and (max-width: 992px) {
+    header {
+        position: relative;
+        background-color: #0f171e;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hamburger, .user-icon {
+        height: 26px;
+        width: 26px;
+    }
+    .logo {
+        width: 85px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hamburger {
+        height: 23px;
+        width: 23px;
+        margin-left: 20px;
+    }
+    .user-icon {
+        height: 23px;
+        width: 23px;
+        margin-right: 0px;
+    }
+    .logo {
+        width: 75px;
+    }
+}

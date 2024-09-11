@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/header.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="z-2 top-0 w-100">
+        <nav class="navbar">
+            <div class="container py-lg-4 py-2 justify-content-between ps-0">
+                <!-- Logo and hamburger menu -->
+                <div class="d-flex align-items-center">
+                    <!-- page links toggle button -->
+                    <div id="hamburger" class="">
+                        <button class="btn float-end" data-bs-toggle="offcanvas" data-bs-target="#pages" role="button">
+                            <img src="../static/IMAGE/ICONS/hamburger.png" class="img-fluid fs-3 hamburger" data-bs-toggle="offcanvas" data-bs-target="#pages">
+                        </button>
+                    </div>
+                    <!-- Logo -->
+                    <div class="ms-4">
+                        <img src="../static/IMAGE/ICONS/logo.png" class="img-fluid logo" alt="" >
+                    </div>
+                </div>
+
+                <!-- Page links on dekstop size and offcanvas in mobile and tablet size -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="pages" data-bs-keyboard="false"
+                    data-bs-backdrop="false">
+                    <div class="offcanvas-header mt-3">
+                        <h6 class="offcanvas-title ms-3" id="offcanvas">Pages</h6>
+                        <button type="button" class="btn-close text-reset text-bg-danger me-3" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body px-0">
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-truncate">
+                                    <span class="ms-1">HOME</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#submenu1" data-bs-toggle="collapse" class="nav-link text-truncate">
+                                    <span class="ms-1">MOVIE</span> </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link text-truncate">
+                                    <span class="ms-1">TV SHOW</span></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- offcanvas for user profile and other details -->
+                <div class="offcanvas offcanvas-end canvasStyle" tabindex="-1" id="offcanvas1" data-bs-keyboard="false"
+                    data-bs-backdrop="false">
+                    <div class="offcanvas-header mt-3">
+                        <h6 class="offcanvas-title ms-4" id="offcanvas">Menu</h6>
+                        <button type="button" class="btn-close text-reset text-bg-danger" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body px-0">
+                        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-start" id="menu">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-truncate">
+                                    <span class="ms-1">Profile</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link text-truncate">
+                                    <span class="ms-1">Your Tickets</span> </a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link text-truncate">
+                                    <span class="ms-1">Watch List</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link text-truncate">
+                                    <span class="ms-1">Rating</span></a>
+                            </li>
+                            <li>
+                                <a href="#" class="nav-link text-truncate">
+                                    <span class="ms-1">Trending</span> </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'base:login' %}" class="nav-link text-truncate">
+                                    <span class="ms-1">Login</span> </a>
+                            </li>
+                            <li>
+                                <a href="{% url 'base:logout' %}" class="nav-link text-truncate">
+                                    <span class="ms-1">Logout</span> </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- user profile toggle button -->
+                <div>
+                    <button class="btn float-end" data-bs-toggle="offcanvas" data-bs-target="#offcanvas1" role="button">
+                        <img src="../static/IMAGE/ICONS/menu.png" class="img-fluid fs-3 user-icon" data-bs-toggle="offcanvas"
+                            height="35px" width="35px" data-bs-target="#offcanvas1">
+                    </button>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <hr class="d-lg-none m-0 border-bottom" />
+
+
+    <script src="../static/JS/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
